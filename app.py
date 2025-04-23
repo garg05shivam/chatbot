@@ -59,6 +59,9 @@ HISTORY_KEYWORDS = [
 @app.route('/')
 def home():
     return render_template('index.html')
+@app.route('/test', methods=['GET'])
+def test():
+    return jsonify({'status': 'success', 'message': 'The server is up and running!'})
 
 @app.route('/api/chat', methods=['POST'])
 def chat():
