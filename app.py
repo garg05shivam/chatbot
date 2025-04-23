@@ -286,4 +286,4 @@ def generate_rule_based_response(prompt):
     return limit_response_to_words(random.choice(general_responses))
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5000) 
+    app.run(debug=True, port=10000) 
